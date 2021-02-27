@@ -24,7 +24,6 @@ def get_jokes(n, flag=False):
         adv = [choice(adverbs) for i in range(n)]
         adj = [choice(adjectives) for i in range(n)]
 
-    print(nou, adv, adj)
     return list(map(' '.join, [[a, b, c] for a, b, c in zip(nou, adv, adj)]))
 
 
